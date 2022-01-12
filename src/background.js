@@ -33,6 +33,8 @@ octokit.repos.getContent({
   const filteredDefinitions = res.data.filter((defs) => defs.name.startsWith(`${packageName}_`));
 
   if (filteredDefinitions.length > 0) {
+    const supportedVersions = filteredDefinitions.map((def) => def.name.substring(`${packageName}_`.length));
+
     const element = document.querySelector(`[title="${scope ? `${scope}/` : ''}${packageName}"]`)?.parentElement;
 
     if (element instanceof HTMLElement) {
@@ -40,7 +42,7 @@ octokit.repos.getContent({
       flowTypedIcon.src = flowIcon;
       flowTypedIcon.height = 20;
       flowTypedIcon.style.paddingLeft = '1rem';
-      flowTypedIcon.title = 'This is a test';
+      flowTypedIcon.title = `This library is flow-typed in versions: \n${supportedVersions.join('\n')}`;
       element.appendChild(flowTypedIcon);
     }
   }
