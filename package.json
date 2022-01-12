@@ -1,0 +1,19 @@
+{
+  "repository": "git@github.com:Brianzchen/extension-npmjs-flow-typed.git",
+  "author": "bzchen93@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src --out-dir lib && cp public/manifest.json lib/manifest.json"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-flow": "^7.16.7",
+    "flow-bin": "^0.169.0"
+  }
+}

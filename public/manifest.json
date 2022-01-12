@@ -1,0 +1,13 @@
+{
+  "name": "Npmjs flow-typed",
+  "description": "Show if a library is shipped or typed with flowtype on npmjs.com",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.npmjs.com/package/*"],
+      "js": ["background.js"]
+    }
+  ]
+}
