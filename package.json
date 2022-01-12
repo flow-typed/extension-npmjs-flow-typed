@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf lib",
+    "start": "yarn clean && mkdir lib && cp public/manifest.json lib/manifest.json && webpack --config webpack.config.js --watch",
     "build": "yarn clean && webpack --config webpack.config.js && cp public/manifest.json lib/manifest.json"
   },
   "dependencies": {
