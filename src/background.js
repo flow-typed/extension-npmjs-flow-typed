@@ -1,6 +1,8 @@
 // @flow
 const { Octokit } = require('@octokit/rest');
 
+const flowIcon = require('./flow.svg');
+
 const octokit = new Octokit();
 
 const pathPrefix = '/package/';
@@ -31,7 +33,15 @@ octokit.repos.getContent({
   const filteredDefinitions = res.data.filter((defs) => defs.name.startsWith(`${packageName}_`));
 
   if (filteredDefinitions.length > 0) {
-    // do something
-    console.log(filteredDefinitions);
+    const element = document.querySelector(`[title="${scope ? `${scope}/` : ''}${packageName}"]`)?.parentElement;
+
+    if (element instanceof HTMLElement) {
+      const flowTypedIcon = document.createElement('img');
+      flowTypedIcon.src = flowIcon;
+      flowTypedIcon.height = 20;
+      flowTypedIcon.style.paddingLeft = '1rem';
+      flowTypedIcon.title = 'This is a test';
+      element.appendChild(flowTypedIcon);
+    }
   }
 });

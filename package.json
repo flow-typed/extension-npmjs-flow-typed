@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf lib",
-    "start": "yarn clean && mkdir lib && cp public/manifest.json lib/manifest.json && webpack --config webpack.config.js --watch",
-    "build": "yarn clean && webpack --config webpack.config.js && cp public/manifest.json lib/manifest.json"
+    "start": "yarn clean && mkdir lib && cp -a public/ lib/ && webpack --config webpack.config.js --watch",
+    "build": "yarn clean && webpack --config webpack.config.js && cp -a public/ lib/"
   },
   "dependencies": {
     "@octokit/rest": "^18.12.0"
@@ -17,6 +17,7 @@
     "@babel/preset-flow": "^7.16.7",
     "babel-loader": "^8.2.3",
     "flow-bin": "^0.169.0",
+    "svg-url-loader": "^7.1.1",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
   }
