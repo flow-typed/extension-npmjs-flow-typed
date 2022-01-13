@@ -1,6 +1,10 @@
 # extension-npmjs-flow-typed
 Browser extension to show if a library is shipped or typed with flowtype
 
+> Shipped with types icon is WIP
+
+<img src="./assets/demo.png" alt="demo">
+
 ## Build
 
 ```
