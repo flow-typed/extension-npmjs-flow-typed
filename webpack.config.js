@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: './src/background.js',
   output: {
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'background.js',
   },
   module: {

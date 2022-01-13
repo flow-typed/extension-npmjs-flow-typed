@@ -1,4 +1,5 @@
 @babel
+babel-loader
 eslint
 eslint-config-bzc
 eslint-config-airbnb

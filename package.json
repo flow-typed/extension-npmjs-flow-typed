@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean": "rm -rf lib",
-    "start": "yarn clean && mkdir lib && cp -a public/ lib/ && webpack --config webpack.config.js --watch",
-    "build": "yarn clean && webpack --config webpack.config.js && cp -a public/ lib/"
+    "clean": "rm -rf dist",
+    "start": "yarn clean && mkdir dist && cp -a public/ dist/ && webpack --config webpack.config.js --watch",
+    "build": "yarn clean && webpack --config webpack.config.js && cp -a public/ dist/ && zip -r dist.zip ./dist*"
   },
   "dependencies": {
     "@octokit/rest": "^18.12.0"
