@@ -44,6 +44,11 @@ octokit.repos.getContent({
       flowTypedIcon.style.paddingLeft = '1rem';
       flowTypedIcon.title = `This library is flow-typed in versions: \n${supportedVersions.join('\n')}`;
       element.appendChild(flowTypedIcon);
+
+      const tsIcon = element.childNodes?.[1];
+      if (tsIcon instanceof HTMLElement) {
+        tsIcon.style.display = 'flex';
+      }
     }
   }
 });
