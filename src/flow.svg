@@ -1,14 +1,1 @@
-<svg class="flow-logo" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="-29 0 300 300">
-  <title>Flow logo</title>
-  <g class="flow-logo-mark">
-    <path fill="#1F55FF" opacity=".7" d="M224.74 156.64l-84.11-84.1h84.11z"/>
-    <path fill="#1F55FF" opacity=".7" d="M81.72 0l84.11 84.1H81.72z"/>
-    <path fill="#3968FF" opacity=".9" d="M84.45 131.79L.34 47.67h101.13v84.11zm73.89 84.1L242.45 300h-84.11z"/>
-    <path fill="#90AAFF" opacity=".7" d="M101.47 215.9l-84.1-84.12h84.11v84.11zm90.58-42.57L125 106.24h67.08zm7.84 118.84l-76.28-76.27h76.28z"/>
-    <path fill="#7CBCFC" opacity=".9" d="M101.47 114.63l-84-84h84z"/>
-    <path fill="#4099F9" opacity=".8" d="M123.95 215.89L208.06 300h-84.11v-84.11z"/>
-    <path fill="#4099F9" opacity=".7" d="M209.08 249.47l-84-84h84z"/>
-    <path fill="#3968FF" opacity=".9" d="M125 106.24l83.09 83.09H125v-83.09z"/>
-    <path fill="#376FFF" opacity=".7" d="M101.47 299.67L0 198.18h101.47v101.48z"/>
-  </g>
-</svg>
+<svg width="2019" height="2500" viewBox="0 0 256 317" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient x1="16.107%" y1="58.187%" x2="72.709%" y2="72.89%" id="a"><stop stop-color="#FFD441" offset="0%"/><stop stop-color="#FFB047" offset="100%"/></linearGradient><linearGradient x1="70.213%" y1="65.797%" y2="0%" id="b"><stop stop-color="#FFD754" offset="0%"/><stop stop-color="#FFB532" offset="100%"/></linearGradient><linearGradient x1="22.178%" y1="66.138%" x2="22.178%" y2="9.316%" id="c"><stop stop-color="#FFD642" offset="0%"/><stop stop-color="#FFD441" offset="0%"/><stop stop-color="#FFB532" offset="100%"/></linearGradient><linearGradient x1="88.953%" y1="24.298%" x2="12.579%" y2="6.966%" id="d"><stop stop-color="#FFD441" offset="0%"/><stop stop-color="#FFA829" offset="100%"/></linearGradient></defs><path d="M211.69 309.979V228.12h-81.201l81.2 81.858" fill-opacity=".7" fill="#FFDF51"/><path d="M220.801 263.566v-88.533H132.98l87.822 88.533" fill-opacity=".7" fill="#FF8900"/><path d="M167.467 228.118v88.534h87.822l-87.822-88.534" fill-opacity=".7" fill="url(#a)"/><path d="M202.444 180.962v-70.027h-69.467l69.467 70.027" fill-opacity=".7" fill="#FFDF4F"/><path d="M235.424 164.267V75.733h-87.822l87.822 88.534" fill-opacity=".8" fill="url(#b)"/><path d="M85.735 0v88.533h87.822L85.735 0" fill-opacity=".8" fill="url(#c)"/><path d="M106.334 138.667V50.133H.135l87.443 88.552 18.756-.018" fill-opacity=".88" fill="url(#d)"/><path d="M106.334 316.175V209.067H.135l106.199 107.108" fill-opacity=".7" fill="#FFB700"/><path d="M106.357 227.467v-88.534H18.535l87.822 88.534" fill-opacity=".5" fill="#FFB700"/><path d="M132.976 110.933v88.534h87.823l-87.823-88.534" fill-opacity=".7" fill="#FFCD25"/><path d="M106.135 120.9V32.365H18.313l87.822 88.533M130.489 228.118v88.534h87.822l-87.822-88.534" fill-opacity=".7" fill="#FF8900"/></svg>
