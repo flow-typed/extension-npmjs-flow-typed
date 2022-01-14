@@ -2,6 +2,7 @@
   "name": "Npmjs flow-typed",
   "description": "Show if a library is shipped or typed with flowtype on npmjs.com",
   "version": "1.0.0",
+  "default_locale": "en",
   "manifest_version": 3,
   "icons": {
     "16": "icons/16.png",

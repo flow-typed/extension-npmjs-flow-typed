@@ -1,7 +1,7 @@
 # extension-npmjs-flow-typed
 Browser extension to show if a library is shipped or typed with flowtype
 
-> Whether a library ships with flowtype is determined by whether it has appropriate dependencies to create flow definitions.
+> Whether a library ships with flowtype is determined by whether it has appropriate dependencies to create flow definitions so millage may vary.
 >
 > Will not work if created through a mono repo or if definitions are created by other means
 
