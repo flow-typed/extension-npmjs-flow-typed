@@ -1,6 +1,6 @@
 {
-  "name": "Npmjs flow-typed",
-  "description": "Show if a library is shipped or typed with flowtype on npmjs.com",
+  "name": "Flowtyped for npmjs.com",
+  "description": "On npmjs.com, displays an icon if a library ships with Flow types, or types are available through flow-typed.",
   "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
