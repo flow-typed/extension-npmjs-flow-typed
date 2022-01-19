@@ -1,5 +1,7 @@
 # extension-npmjs-flow-typed
-Browser extension to show if a library is shipped or typed with flowtype
+Browser extension to show if a library is shipped or typed with flowtype.
+
+Install it here, https://chrome.google.com/webstore/detail/flowtyped-for-npmjscom/lnfeoabffapnahgbbifehdbnncnpoemm
 
 > Whether a library ships with flowtype is determined by whether it has appropriate dependencies to create flow definitions so millage may vary.
 >
