@@ -30,6 +30,7 @@ octokit.repos.getContent({
   owner: 'flow-typed',
   repo: 'flow-typed',
   path: `definitions/npm${scope ? `/${scope}` : ''}`,
+  ref: 'main',
 }).then(async (res) => {
   const filteredDefinitions = res.data.filter((defs) => defs.name.startsWith(`${packageName}_`));
   const libName = `${scope ? `${scope}/` : ''}${packageName}`;
