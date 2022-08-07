@@ -70,13 +70,13 @@ octokit.repos.getContent({
 
     const checkByDependencies = () => new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
-      xhr.open('GET', `https://api.npms.io/v2/package/${encodeURIComponent(libName)}`);
+      xhr.open('GET', `https://registry.npmjs.org/${encodeURIComponent(libName)}/latest`);
       xhr.send();
 
       xhr.onload = function() {
         if (xhr.status === 200) {
           const response = JSON.parse(xhr.response);
-          const { dependencies = {}, devDependencies = {} } = response.collected.metadata;
+          const { dependencies = {}, devDependencies = {} } = response;
 
           [...Object.keys(dependencies), ...Object.keys(devDependencies)].forEach((dep) => {
             if (['gen-flow-files', 'flow-copy-source'].indexOf(dep) > -1) {
