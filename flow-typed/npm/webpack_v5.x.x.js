@@ -1,5 +1,5 @@
-// flow-typed signature: 95d8f53ba64c3048c18517b2c631d593
-// flow-typed version: 25001cfe9c/webpack_v5.x.x/flow_>=v0.104.x
+// flow-typed signature: 609a2dadacfeffc168d2c9c53ec666b2
+// flow-typed version: ac213d8267/webpack_v5.x.x/flow_>=v0.104.x
 
 declare module 'webpack' {
   import typeof { Server } from 'http';
@@ -192,11 +192,10 @@ declare module 'webpack' {
 
   declare type WebpackPluginFunction = (compiler: WebpackCompiler) => void;
 
-  declare type WebpackPluginInstance = {
-    [k: string]: any,
-    apply: WebpackPluginFunction,
-    ...
-  };
+  declare interface WebpackPluginInstance {
+    apply: WebpackPluginFunction;
+    [k: string]: any;
+  }
 
   declare type OptimizationSplitChunksOptions = {
     automaticNameDelimiter?: string,
@@ -242,7 +241,7 @@ declare module 'webpack' {
 
   declare type OptimizationOptions = {
     checkWasmTypes?: boolean,
-    chunkIds?: 'natural' | 'named' | 'size' | 'total-size' | false,
+    chunkIds?: 'natural' | 'named' | 'deterministic' | 'size' | 'total-size' | false,
     concatenateModules?: boolean,
     flagIncludedChunks?: boolean,
     hashedModuleIds?: boolean,
@@ -250,7 +249,7 @@ declare module 'webpack' {
     mergeDuplicateChunks?: boolean,
     minimize?: boolean,
     minimizer?: Array<WebpackPluginInstance | WebpackPluginFunction>,
-    moduleIds?: 'natural' | 'named' | 'hashed' | 'size' | 'total-size' | false,
+    moduleIds?: 'natural' | 'named' | 'hashed' | 'deterministic' | 'size' | false,
     namedChunks?: boolean,
     namedModules?: boolean,
     noEmitOnErrors?: boolean,
