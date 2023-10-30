@@ -26,6 +26,8 @@ const {
   }
 })();
 
+console.info(`flow-typed extension: checking ${scope ? `${scope}/` : ''}${packageName}`)
+
 octokit.repos.getContent({
   owner: 'flow-typed',
   repo: 'flow-typed',
@@ -36,7 +38,7 @@ octokit.repos.getContent({
   const libName = `${scope ? `${scope}/` : ''}${packageName}`;
 
   const addIcon = (attributes: { src: string, title: string }) => {
-    const element = document.querySelector(`[title="${libName}"]`)?.parentElement;
+    const element = document.getElementsByTagName('h1')[0];
 
     if (element instanceof HTMLElement) {
       const flowTypedIcon = document.createElement('img');
